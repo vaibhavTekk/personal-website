@@ -1,0 +1,59 @@
+/* Color Theme Swatches in Hex */
+.Dark-Spots-1-hex { color: #42708C; }
+.Dark-Spots-2-hex { color: #8FADBF; }
+.Dark-Spots-3-hex { color: #C5D1D9; }
+.Dark-Spots-4-hex { color: #024059; }
+.Dark-Spots-5-hex { color: #010000; }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+
+nav{
+    position:sticky;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #010000;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+}
+.name{
+    margin:auto;
+    padding:10px 10px;
+    flex:1 0 100px;
+    justify-content: flex-start;
+    font-size: 32px;
+}
+.links{
+    align-content: center;
+    width: 25%;
+    justify-content: center;
+    display: flex;
+    margin:0;
+}
+.links a{
+    height:100%;
+    text-align: center;
+    flex:1 0 0;
+    text-decoration: none;
+    color:white;
+}
+.links a:hover{
+    background-color: #C5D1D9;
+    color: #010000;
+}
+
+/*main*/
+
+.main{
+    height: 100%;
+    size: 100px 100px;
+    background-image: url(img\blob-scene-haikei.svg);
+    background-size: 100px 100px;
+}
