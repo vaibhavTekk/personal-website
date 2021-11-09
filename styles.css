@@ -5,6 +5,7 @@
 .Dark-Spots-4-hex { color: #024059; }
 .Dark-Spots-5-hex { color: #010000; }
 
+
 html,body{
     margin: 0;
     padding: 0;
@@ -12,6 +13,10 @@ html,body{
     color: white;
 }
 
+h1{
+    text-align: center;
+    align-content: center;
+}
 /* Navbar Styling */
 
 nav{
@@ -61,8 +66,8 @@ nav{
 
 /*main*/
 body{
-    background-repeat: no-repeat;
-    background-image: url('/img/blob-scene-haikei.svg');
+    background-repeat: repeat-y;
+    background-image: url('./img/blob-scene-haikei.svg');
 }
 
 .main{
@@ -78,21 +83,23 @@ body{
     justify-content: space-around;
     justify-items: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pfp{
     max-width: 30%;
+    margin :25px 25px;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     border-style:solid;
     border-width: 5px;
     border-color: white;
-    flex:0 0 0;
+    flex:0 0 100px;
 }
 
 .main p{
-    margin:0 0;
+    margin:20px 20px;
     white-space: pre-line;
 
     color: white;
@@ -101,4 +108,56 @@ body{
 .main p span{
     font-weight: Bold;
 }
-/*test*/
+/*about*/
+.about{
+    margin:100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about h1{
+    font-size:60px;
+    flex-grow: 1;
+}
+.about ul{
+    font-size: 25px;
+    margin: auto;
+    flex-grow: 1;
+}
+/*skills
+.skills{
+    margin:100px 0;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+.skills h1{
+    font-size:60px;
+    flex-grow: 1;
+}
+*/
+
+/*links
+.mainlink{
+    display: flex;
+    margin: 100px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainlink h1{
+    font-size:60px;
+    flex-grow: 1;
+}
+
+.mainlink ul{
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainlink ul li{
+    flex-grow: 1;
+}
+*/
