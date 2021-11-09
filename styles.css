@@ -31,29 +31,57 @@ nav{
     font-size: 32px;
 }
 .links{
-    align-content: center;
-    width: 25%;
-    justify-content: center;
-    display: flex;
-    margin:0;
+    width:40%;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
 }
-.links a{
+
+.links li{
+    text-align: center;
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    color: #C5D1D9;
+}
+.links li a{
+    margin: auto;
+    flex: 1 0 0;
+    text-decoration: none;
+    color:inherit;
+}
+
+.links li:hover{
+    background-color: #C5D1D9;
+    color: #010000;
+    
+}
+/*
+.links{
+    width: 25%;
+    justify-content: space-around;
+    list-style: none;
+    white-space: nowrap;
+    display: flex;
+}
+.links li{
+    display: inline-block;
     height:100%;
     text-align: center;
     flex:1 0 0;
-    text-decoration: none;
-    color:white;
+    margin:auto;
 }
-.links a:hover{
-    background-color: #C5D1D9;
-    color: #010000;
+.links a{
+    display: block;
+    margin: auto;
 }
+*/
+
 
 /*main*/
 
 .main{
     height: 100%;
-    size: 100px 100px;
-    background-image: url(img\blob-scene-haikei.svg);
-    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-image: url('/img/blob-scene-haikei.svg');
 }
