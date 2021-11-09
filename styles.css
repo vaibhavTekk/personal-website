@@ -62,7 +62,7 @@ nav{
 /*main*/
 body{
     background-repeat: no-repeat;
-    background-image: url('./img/blob-scene-haikei.svg');
+    background-image: url('../img/blob-scene-haikei.svg');
 }
 
 .main{
