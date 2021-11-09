@@ -5,9 +5,11 @@
 .Dark-Spots-4-hex { color: #024059; }
 .Dark-Spots-5-hex { color: #010000; }
 
-*{
+html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
 }
 
 /* Navbar Styling */
@@ -20,7 +22,7 @@ nav{
     height: auto;
     display: flex;
     background: #010000;
-    font-family: 'Montserrat',sans-serif;
+    
     color: white;
 }
 .name{
@@ -56,32 +58,46 @@ nav{
     color: #010000;
     
 }
-/*
-.links{
-    width: 25%;
-    justify-content: space-around;
-    list-style: none;
-    white-space: nowrap;
-    display: flex;
-}
-.links li{
-    display: inline-block;
-    height:100%;
-    text-align: center;
-    flex:1 0 0;
-    margin:auto;
-}
-.links a{
-    display: block;
-    margin: auto;
-}
-*/
-
 
 /*main*/
-
-.main{
-    height: 100%;
+body{
     background-repeat: no-repeat;
     background-image: url('/img/blob-scene-haikei.svg');
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    margin:2% 2%;
+    padding:2% 2%;
+    height: 500px;
+    background:rgba(143, 173, 191, 0.3);
+    border-radius: 25px;
+    white-space: nowrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.pfp{
+    max-width: 30%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-style:solid;
+    border-width: 5px;
+    border-color: white;
+    flex:0 0 0;
+}
+
+.main p{
+    margin:0 0;
+    white-space: pre-line;
+
+    color: white;
+    font-size:44px;
+}
+.main p span{
+    font-weight: Bold;
 }
