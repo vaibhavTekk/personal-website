@@ -7,6 +7,7 @@
 
 
 html,body{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat',sans-serif;
@@ -24,19 +25,31 @@ nav{
     padding-left: 10px;
     padding-right: 10px;
     width: auto;
-    height: auto;
+    height: 62px;
     display: flex;
     background: #010000;
     
     color: white;
 }
+@keyframes grow {
+    from{font-size: 32px;}
+    to{font-size: 33px;}
+}
 .name{
     margin:auto;
-    padding:10px 10px;
+    padding:10px 20px;
     flex:1 0 100px;
     justify-content: flex-start;
     font-size: 32px;
 }
+
+.name:hover{
+    animation-name:grow;
+    animation-duration: 0.25s;
+    font-size: 33px;
+}
+
+
 .links{
     width:40%;
     display:flex;
@@ -58,7 +71,15 @@ nav{
     color:inherit;
 }
 
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .links li:hover{
+    animation-name: fadein;
+    animation-duration: 0.25s;
+    border-radius: 5px;
     background-color: #C5D1D9;
     color: #010000;
     
@@ -125,10 +146,10 @@ body{
     margin: auto;
     flex-grow: 1;
 }
-/*skills
+/*skills*/
 .skills{
     margin:100px 0;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     display: flex;
 }
@@ -136,8 +157,45 @@ body{
     font-size:60px;
     flex-grow: 1;
 }
-*/
+.skillgrid{
+    justify-self: center;
+    align-self: center;
+    padding:20px 50px;
+    width:80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.skill{
+    justify-self:center;
 
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:auto;
+    border-radius: 10px;
+    margin: 8px 8px;
+    
+    width: 175px;
+    height: 50px;
+    background:white;
+}
+.skill span{
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color:#010000;
+}
+.skill img{
+    margin:auto;
+    height: 40px;
+    width: 40px;
+}
+.blank{
+    background-color:rgba(143, 173, 191, 0.3);
+}
 /*links
 .mainlink{
     display: flex;
