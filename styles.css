@@ -256,6 +256,10 @@ footer a{
 
 @media screen and (max-width:768px) {
     .skillgrid{
+        position: relative;
+        transform:translate(-15px);
+        padding:0 0;
+        margin: 0 0;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -271,8 +275,5 @@ footer a{
         font-size: 18px;
         padding:none;
 
-    }
-    .skillgrid{
-        padding:none;
     }
 }
