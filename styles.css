@@ -254,6 +254,77 @@ footer a{
     color: white;
 }
 
+/*projects*/
+.projects{
+    display:flex;
+    flex-direction: column;
+}
+
+.projects h1{
+    font-size:60px;
+    flex-grow: 1;
+}
+
+.projects ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: auto;
+    width: 75%;
+    background-color: #213e53;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card img{
+    height: 256px;
+    width: 100%;   
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+#cardheading{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px;
+    height: auto;
+}
+
+.card p{
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.card a{
+    padding: 8px;
+    color: #010000;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card a:hover{
+    transform: scale(1.05);
+}
+
+
 @media screen and (max-width:768px) {
     .skillgrid{
         position: relative;
@@ -277,3 +348,5 @@ footer a{
 
     }
 }
+
+
