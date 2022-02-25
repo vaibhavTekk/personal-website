@@ -268,7 +268,6 @@ footer a{
 .projects ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     
 }
 
@@ -326,6 +325,10 @@ footer a{
 
 
 @media screen and (max-width:768px) {
+    .projects ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .skillgrid{
         position: relative;
         transform:translate(-15px);
